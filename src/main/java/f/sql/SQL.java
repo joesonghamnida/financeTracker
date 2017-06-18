@@ -44,4 +44,8 @@ public class SQL {
 
     public static void deleteRecord(){}
 
+    public static void withdrawMoney(){}
+
+    public static void depositMoney(){}
+
 }
