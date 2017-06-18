@@ -12,6 +12,8 @@ public class DDL {
         return conn;
     }
 
+    //TODO: ENCRYPT ENCRYPT ENCRYPT
+
     //tables to be created: bank, account type (checking or savings), credit cards, loans
 
     /*

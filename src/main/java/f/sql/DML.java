@@ -13,6 +13,8 @@ public class DML {
         return conn;
     }
 
+    //TODO: ENCRYPT ENCRYPT ENCRYPT
+
     public static void insertRecord(Connection conn)throws SQLException{
         PreparedStatement statement = conn.prepareStatement("");
     }
