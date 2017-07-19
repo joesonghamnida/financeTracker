@@ -26,12 +26,13 @@ public class DDL {
 
     public static void createBanksTable(Connection conn)throws SQLException{
         Statement statement = conn.createStatement();
-        statement.execute("CREATE TABLE IF NOT EXISTS banks(id IDENTITY )");
+        statement.execute("CREATE TABLE IF NOT EXISTS banks(id IDENTITY bankName VARCHAR)");
     }
 
+    //TODO: find out how SQL deals with money
     public static void createAccountsTable(Connection conn)throws SQLException{
         Statement statement = conn.createStatement();
-        statement.execute("CREATE TABLE IF NOT EXISTS accounts(id IDENTITY )");
+        statement.execute("CREATE TABLE IF NOT EXISTS accounts(id IDENTITY accountType CHAR(10) accountName VARCHAR bankName VARCHAR currentBalance INT)");
     }
 
     public static void createCreditCardsTable(Connection conn)throws SQLException{
